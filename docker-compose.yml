@@ -1,0 +1,9 @@
+version: "3"
+services:
+  api:
+    container_name: "nsre-app-backend"
+    build: .
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./src:/code/src
